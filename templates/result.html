@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Predictor</a></li>
+            <li><a href="/dmartdashboard">DMart Dashboard</a></li>
+            <li><a href="/comparativeanalysis">Comparative Analysis</a></li>
+        </ul>
+    </nav>
+
+    <h1>Feedback Prediction for {{ customer_name }}</h1>
+    <p>The predicted feedback (in stars) is: <strong>{{ predicted_stars }}</strong> stars</p>
+    <a href="/">Make another prediction</a>
+</body>
+
+</html>

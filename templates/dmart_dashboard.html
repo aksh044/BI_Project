@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMart Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Predictor</a></li>
+            <li><a href="/dmartdashboard">DMart Dashboard</a></li>
+            <li><a href="/comparativeanalysis">Comparative Analysis</a></li>
+        </ul>
+    </nav>
+
+    <h1>DMart Dashboard</h1>
+    <div class="container">
+        <!-- Embedding Power BI dashboard -->
+        <iframe title="DMart Dashboard" width="100%" height="600px"
+            src="https://app.powerbi.com/view?r=eyJrIjoiOTc3NjBlODEtOTMwMi00OTQ2LWFhNjctOWJiNGExNThjOTAwIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+            frameborder="0" allowFullScreen="true">
+        </iframe>
+    </div>
+</body>
+
+</html>
